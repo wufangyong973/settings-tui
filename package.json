@@ -9,8 +9,8 @@
   },
   "preferGlobal": true,
   "scripts": {
-    "start": "node bin/settings-tui.js",
-    "build": "cargo build --release",
+    "start": "node api.js && node bin/settings-tui.js",
+    "build": "node api.js && cargo build --release",
     "test": "cargo test --all-features",
     "fmt": "cargo fmt --check",
     "clippy": "cargo clippy --all-targets --all-features -- -D warnings"
